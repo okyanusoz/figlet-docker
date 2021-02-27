@@ -14,4 +14,4 @@ jobs:
       - name: Build Docker image
         run: docker build -t figlet .
       - name: Test Docker image
-        run: docker run -it --rm figlet Hello
+        run: docker run --rm figlet Hello
