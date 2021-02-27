@@ -2,7 +2,7 @@
 # Python is for staticx(this makes a clean, static binary)
 FROM python:3.9-slim AS builder
 
-# Install build-essential, wget, binutils and patchelf
+# Install build-essential, wget, binutils and patchelf 
 RUN apt update && \
     apt install build-essential wget binutils patchelf -y
 
