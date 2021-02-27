@@ -18,3 +18,8 @@ To run FIGlet, type:
 ````
 docker run -it --rm figlet <arguments>
 ````
+
+
+## Note
+
+The built Docker image contains the FIGlet binary in it, thus the built Docker image has FIGlet's license. See LICENSE.figlet
