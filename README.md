@@ -12,6 +12,8 @@ A very small (less than 3MB!) Docker image for FIGlet
 Simply clone this repo and run
 ``docker build -t figlet .``
 
+Or, you can use the prebuilt version that is updated on every push to this repo: ``docker pull docker.pkg.github.com/okyanusoz/figlet-docker/figlet:main``
+
 ## Running FIGlet
 
 To run FIGlet, type:
