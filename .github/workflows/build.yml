@@ -3,3 +3,20 @@ name: Build and Push to GitHub Packages
 on:
   push:
     branches: [master]
+  workflow_dispatch:
+
+jobs:
+  push:
+    name: Build and Push
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v2
+      - name: Build and push to GitHub Packages
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          repository: okyanusoz/figlet-docker/figlet
+          tag_with_ref: true
