@@ -19,4 +19,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
           repository: okyanusoz/figlet-docker/figlet
-          tags: [latest]
+          tags: latest
