@@ -1,0 +1,5 @@
+name: Build and Push to GitHub Packages
+
+on:
+  push:
+    branches: [master]
