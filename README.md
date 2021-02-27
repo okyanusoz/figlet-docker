@@ -14,7 +14,7 @@ Simply clone this repo and run
 
 Or, you can use the prebuilt version that is updated on every push to this repo: ``docker pull docker.pkg.github.com/okyanusoz/figlet-docker/figlet:main``.
 
-**NOTE**: You need to login to GitHub Packages Registry to be able to pull the prebuilt version. Simply create a token that or use an existing one, then login using ``docker login docker.pkg.github.com`` with your username and your token as the password.
+**NOTE**: You need to login to GitHub Packages Registry to be able to pull the prebuilt version. Simply create a token that has the read:packages scope or use an existing one, then login using ``docker login docker.pkg.github.com`` with your username and your token as the password.
 
 ## Running FIGlet
 
