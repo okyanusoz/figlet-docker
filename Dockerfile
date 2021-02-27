@@ -4,7 +4,7 @@ FROM python:3.9-slim AS builder
 
 # Install build-essential, wget, binutils and patchelf
 RUN apt update && \
-    apt install build-essential wget binutils patchelf -y
+    apt install build-essential wget binutils patchelf
 
 # Install staticx
 RUN pip install staticx
