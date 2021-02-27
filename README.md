@@ -20,7 +20,7 @@ Or, you can use the prebuilt version that is updated on every push to this repo:
 
 To run FIGlet, type:
 ````
-docker run -it --rm figlet <arguments>
+docker run -it --rm <image name> <arguments>
 ````
 
 
