@@ -2,15 +2,15 @@
 # Python is for staticx(this makes a clean, static binary)
 FROM python:3.9-slim AS builder
 
-# Install build-essential, wget, binutils and patchelf
+# Install build-essential, binutils and patchelf
 RUN apt update && \
-    apt install build-essential wget binutils patchelf -y
+    apt install build-essential binutils patchelf -y
 
 # Install staticx
 RUN pip install staticx
 
 # Get source code tarball of Figlet 2.2.5
-RUN wget http://ftp.figlet.org/pub/figlet/program/unix/figlet-2.2.5.tar.gz -O /tmp/figlet.tar.gz
+ADD http://ftp.figlet.org/pub/figlet/program/unix/figlet-2.2.5.tar.gz /tmp/figlet.tar.gz
 
 # Untar source code to /usr/src and delete source code tarball
 WORKDIR /usr/src/
