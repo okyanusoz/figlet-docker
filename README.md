@@ -24,6 +24,6 @@ docker run -it --rm <image name> <arguments>
 ````
 
 
-## Note
+## Licenses
 
-The built Docker image contains the FIGlet binary in it, thus the built Docker image has FIGlet's license. See LICENSE.figlet
+See the licenses directory for information on licensed software contained in the image.

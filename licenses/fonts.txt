@@ -1,0 +1,3 @@
+Files under /usr/local/share/figlet may be licensed under diffrent terms.
+
+Please take a look at the beginning of the file, most likely it'll contain the terms.
